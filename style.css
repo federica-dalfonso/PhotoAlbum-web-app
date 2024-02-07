@@ -1,0 +1,59 @@
+/*general settings*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*navbar*/
+nav.navbar img {
+    height: 2.5em;
+}
+
+nav.navbar button.btn-info {
+    border: none;
+    margin-left: 0.5em;
+    border-radius: 50%;
+    padding: 0.5em 0.5em;
+}
+
+nav.navbar button.btn-info i {
+    color: white;
+    padding: 0.2em; 
+}
+
+nav.navbar button.btn-info i:hover {
+    color: #6c757d;
+}
+
+/*grid & card*/
+
+.card {
+    border-radius: 0;
+}
+
+.card-img-top {
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+}
+
+.card-icons {
+    align-self: flex-end;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.fa-heart, .fa-bookmark {
+    padding-right: 0.5em;
+    cursor: pointer;
+    transform: transition 0.1 ;
+}

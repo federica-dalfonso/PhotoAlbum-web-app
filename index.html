@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album W2D1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e5a2b2fa25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="logo.png" alt="Logo Image"></a>
+            <div class="d-flex"> <!--fix buttons -->
+                <button type="button" class="btn btn-info"><i class="fa-regular fa-heart fa-lg"></i></button>
+                <button type="button" class="btn btn-info"><i class="fa-solid fa-user fa-lg"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!--end of NAVBAR-->
+
+    <!--MAIN-->
+    <div class="container mt-5 d-flex flex-column align-items-center">
+    <!--JUMBOTRON-->
+        <div class="text-center w-50">
+            <h2 class="text-secondary">Find your pics!</h2>
+            <p class="text-secondary"> Find beautiful images and 
+                use them for your graphic or personal projects.
+                Don't forget to credit the author and, if requested, 
+                include the reference to PhotoAlbum.com!
+            </p>
+        </div>
+
+    <!--RESEARCH section-->
+        <div id="researchSection" class="d-flex mt-4 mb-2">
+            <input type="text" class="form-control" id="searchField" placeholder="Search something..."
+            aria-label="Search" aria-describedby="basic-addon2">  
+            <button class="btn btn-outline-secondary btn-sm" type="button" id="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button> 
+        </div>     
+    <!--end of RESEARCH section-->        
+    <!--end of JUMBOTRON-->
+    </div>
+
+    <div class="container mb-5 py-5">
+        <!--PhotoGRID-->
+        <div id="imageFeed" class="d-none">
+            <h5 class="text-secondary">Search results for:</h5>
+            <div class="row gx-2 gy-3" id="imageRow"></div>
+        </div>
+        <!--end of PhotoGRID-->
+    </div>       
+    <!--end of MAIN-->
+
+     <!--FOOTER-->
+     <footer class="text-center bg-info fixed-bottom" id="footer">
+        <div class="text-center p-3 text-white">
+            <span>@Epicode WDPT - W2D1 JS Advanced</span>            
+        </div>
+    </footer>
+    <!--end footer-->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
